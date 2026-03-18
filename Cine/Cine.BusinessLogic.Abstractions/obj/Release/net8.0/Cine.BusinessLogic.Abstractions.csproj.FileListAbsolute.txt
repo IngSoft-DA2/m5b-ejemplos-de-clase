@@ -1,0 +1,16 @@
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/bin/Release/net8.0/Cine.BusinessLogic.Abstractions.deps.json
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/bin/Release/net8.0/Cine.BusinessLogic.Abstractions.dll
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/bin/Release/net8.0/Cine.BusinessLogic.Abstractions.pdb
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/bin/Release/net8.0/Cine.Domain.dll
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/bin/Release/net8.0/Cine.Domain.pdb
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/Cine.BusinessLogic.Abstractions.csproj.AssemblyReference.cache
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/Cine.BusinessLogic.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/Cine.BusinessLogic.Abstractions.AssemblyInfoInputs.cache
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/Cine.BusinessLogic.Abstractions.AssemblyInfo.cs
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/Cine.BusinessLogic.Abstractions.csproj.CoreCompileInputs.cache
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/Cine.BusinessLogic.Abstractions.sourcelink.json
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/Cine.Bus.226C13BF.Up2Date
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/Cine.BusinessLogic.Abstractions.dll
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/refint/Cine.BusinessLogic.Abstractions.dll
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/Cine.BusinessLogic.Abstractions.pdb
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/obj/Release/net8.0/ref/Cine.BusinessLogic.Abstractions.dll

@@ -107,6 +107,95 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Cine.BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Cine.BusinessLogic.Abstractions": "1.0.0",
+          "Cine.Domain": "1.0.0",
+          "Cine.Repository.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cine.BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cine.BusinessLogic.dll": {}
+        }
+      },
+      "Cine.BusinessLogic.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Cine.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cine.BusinessLogic.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cine.BusinessLogic.Abstractions.dll": {}
+        }
+      },
+      "Cine.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Cine.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cine.Contracts.dll": {}
+        }
+      },
+      "Cine.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Cine.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cine.Domain.dll": {}
+        }
+      },
+      "Cine.Mappings/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Cine.Contracts": "1.0.0",
+          "Cine.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cine.Mappings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cine.Mappings.dll": {}
+        }
+      },
+      "Cine.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Cine.Domain": "1.0.0",
+          "Cine.Repository.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cine.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cine.Repository.dll": {}
+        }
+      },
+      "Cine.Repository.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Cine.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cine.Repository.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cine.Repository.Abstractions.dll": {}
+        }
       }
     }
   },
@@ -473,10 +562,52 @@
         "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Cine.BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../Cine.BusinessLogic/Cine.BusinessLogic.csproj",
+      "msbuildProject": "../Cine.BusinessLogic/Cine.BusinessLogic.csproj"
+    },
+    "Cine.BusinessLogic.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj",
+      "msbuildProject": "../Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj"
+    },
+    "Cine.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Cine.Contracts/Cine.Contracts.csproj",
+      "msbuildProject": "../Cine.Contracts/Cine.Contracts.csproj"
+    },
+    "Cine.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Cine.Domain/Cine.Domain.csproj",
+      "msbuildProject": "../Cine.Domain/Cine.Domain.csproj"
+    },
+    "Cine.Mappings/1.0.0": {
+      "type": "project",
+      "path": "../Cine.Mappings/Cine.Mappings.csproj",
+      "msbuildProject": "../Cine.Mappings/Cine.Mappings.csproj"
+    },
+    "Cine.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Cine.Repository/Cine.Repository.csproj",
+      "msbuildProject": "../Cine.Repository/Cine.Repository.csproj"
+    },
+    "Cine.Repository.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj",
+      "msbuildProject": "../Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Cine.BusinessLogic >= 1.0.0",
+      "Cine.BusinessLogic.Abstractions >= 1.0.0",
+      "Cine.Contracts >= 1.0.0",
+      "Cine.Domain >= 1.0.0",
+      "Cine.Mappings >= 1.0.0",
+      "Cine.Repository >= 1.0.0",
+      "Cine.Repository.Abstractions >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.13",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -487,11 +618,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/CineWebApi.csproj",
+      "projectUniqueName": "/Users/bacosta/ORT2026S1/M5B/Cine/CineWebApi/CineWebApi.csproj",
       "projectName": "CineWebApi",
-      "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/CineWebApi.csproj",
+      "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/CineWebApi/CineWebApi.csproj",
       "packagesPath": "/Users/bacosta/.nuget/packages/",
-      "outputPath": "/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/obj/",
+      "outputPath": "/Users/bacosta/ORT2026S1/M5B/Cine/CineWebApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/bacosta/.nuget/NuGet/NuGet.Config"
@@ -505,7 +636,29 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj"
+            },
+            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic/Cine.BusinessLogic.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic/Cine.BusinessLogic.csproj"
+            },
+            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Contracts/Cine.Contracts.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Contracts/Cine.Contracts.csproj"
+            },
+            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj"
+            },
+            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Mappings/Cine.Mappings.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Mappings/Cine.Mappings.csproj"
+            },
+            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj"
+            },
+            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository/Cine.Repository.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository/Cine.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

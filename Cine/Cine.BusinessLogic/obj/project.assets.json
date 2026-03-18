@@ -1,0 +1,138 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Cine.BusinessLogic.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Cine.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cine.BusinessLogic.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cine.BusinessLogic.Abstractions.dll": {}
+        }
+      },
+      "Cine.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Cine.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cine.Domain.dll": {}
+        }
+      },
+      "Cine.Repository.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Cine.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cine.Repository.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cine.Repository.Abstractions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cine.BusinessLogic.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj",
+      "msbuildProject": "../Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj"
+    },
+    "Cine.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Cine.Domain/Cine.Domain.csproj",
+      "msbuildProject": "../Cine.Domain/Cine.Domain.csproj"
+    },
+    "Cine.Repository.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj",
+      "msbuildProject": "../Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Cine.BusinessLogic.Abstractions >= 1.0.0",
+      "Cine.Domain >= 1.0.0",
+      "Cine.Repository.Abstractions >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/bacosta/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic/Cine.BusinessLogic.csproj",
+      "projectName": "Cine.BusinessLogic",
+      "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic/Cine.BusinessLogic.csproj",
+      "packagesPath": "/Users/bacosta/.nuget/packages/",
+      "outputPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/bacosta/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj"
+            },
+            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj"
+            },
+            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.309/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

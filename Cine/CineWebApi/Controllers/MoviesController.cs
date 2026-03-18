@@ -1,4 +1,6 @@
-using System.Data;
+using Cine.BusinessLogic.Abstractions;
+using Cine.Contracts;
+using Cine.Mappings;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cine.Controllers;
@@ -7,59 +9,61 @@ namespace Cine.Controllers;
 
 public class MoviesController : ControllerBase
 {
-    private static readonly List<Movie> _movies = new() 
+    private readonly IMovieService _movieService;
+
+    public MoviesController(IMovieService movieService)
     {
-        new Movie { Id = 1, Title = "Una batalla tras otra", Stars = 5.0 },
-        new Movie { Id = 2, Title = "Hoppers", Stars = 4.3 },
-        new Movie { Id = 3, Title = "Scream 7", Stars = 2.1 }
-    };
-    
-    [HttpGet]
-    public IActionResult GetAll()
-    {
-        return Ok(_movies);
+        _movieService = movieService;
     }
     
-    [HttpGet("{id}")]
-    public IActionResult GetById([FromRoute] int id)
+    [HttpGet]
+    public ActionResult<IEnumerable<MovieDto>> GetAll()
     {
-        var movie = _movies.FirstOrDefault(m => m.Id == id);
-        return Ok(movie);
+        return Ok(_movieService.GetAll().Select(m => m.ToDto()));
+    }
+    
+    [HttpGet("{id:int}")]
+    public ActionResult<MovieDto> GetById([FromRoute] int id)
+    {
+        var movie = _movieService.GetById(id);
+        if (movie is null)
+        {
+            return NotFound();
+        }
+
+        return Ok(movie.ToDto());
     }
 
     [HttpPost]
-    public IActionResult Create([FromBody] Movie movie)
+    public ActionResult<MovieDto> Create([FromBody] MovieDto movieDto)
     {
-        movie.Id = _movies.Max(m => m.Id) + 1;
-        _movies.Add(movie);
-        return CreatedAtAction(nameof(GetById), new { id = movie.Id }, movie);
+        var created = _movieService.Create(movieDto.ToDomain());
+        return CreatedAtAction(nameof(GetById), new { id = created.Id }, created.ToDto());
     }
 
-    [HttpPut("{id}")]
-    public IActionResult Update([FromRoute]int id, [FromBody] Movie updatedMovie)
+    [HttpPut("{id:int}")]
+    public IActionResult Update([FromRoute] int id, [FromBody] MovieDto updatedMovie)
     {
-        var movie = _movies.FirstOrDefault(m => m.Id == id);
-        
-        movie.Stars = updatedMovie.Stars;
-        movie.Title = updatedMovie.Title;
-        
+        var updated = _movieService.Update(id, updatedMovie.ToDomain());
+        if (!updated)
+        {
+            return NotFound();
+        }
+
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
-    public IActionResult Delete([FromRoute]int id)
+    [HttpDelete("{id:int}")]
+    public IActionResult Delete([FromRoute] int id)
     {
-        _movies.RemoveAll(m => m.Id == id);
-        
+        var deleted = _movieService.Delete(id);
+        if (!deleted)
+        {
+            return NotFound();
+        }
+
         return NoContent();
     }
 
 
-}
-
-public class Movie
-{
-    public int Id { get; set; }
-    public required string Title { get; set; }
-    public double Stars { get; set; }
 }

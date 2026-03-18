@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Cine.Mappings/1.0.0": {
+        "dependencies": {
+          "Cine.Contracts": "1.0.0",
+          "Cine.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Cine.Mappings.dll": {}
+        }
+      },
+      "Cine.Contracts/1.0.0": {
+        "runtime": {
+          "Cine.Contracts.dll": {}
+        }
+      },
+      "Cine.Domain/1.0.0": {
+        "runtime": {
+          "Cine.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cine.Mappings/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cine.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cine.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

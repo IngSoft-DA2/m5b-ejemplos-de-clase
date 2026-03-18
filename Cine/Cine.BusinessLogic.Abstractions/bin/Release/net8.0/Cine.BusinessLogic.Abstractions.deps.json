@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Cine.BusinessLogic.Abstractions/1.0.0": {
+        "dependencies": {
+          "Cine.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Cine.BusinessLogic.Abstractions.dll": {}
+        }
+      },
+      "Cine.Domain/1.0.0": {
+        "runtime": {
+          "Cine.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cine.BusinessLogic.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cine.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
