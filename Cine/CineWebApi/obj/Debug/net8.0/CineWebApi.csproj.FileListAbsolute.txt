@@ -32,3 +32,17 @@
 /Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/obj/Debug/net8.0/CineWebApi.pdb
 /Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/obj/Debug/net8.0/CineWebApi.genruntimeconfig.cache
 /Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/obj/Debug/net8.0/ref/CineWebApi.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.BusinessLogic.Abstractions.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.BusinessLogic.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.Contracts.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.Domain.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.Mappings.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.Repository.Abstractions.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.Repository.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.Domain.pdb
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.Contracts.pdb
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.Mappings.pdb
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.BusinessLogic.pdb
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.Repository.pdb
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.BusinessLogic.Abstractions.pdb
+/Users/bacosta/ORT2026S1/N5B/Cine/CineWebApi/bin/Debug/net8.0/Cine.Repository.Abstractions.pdb

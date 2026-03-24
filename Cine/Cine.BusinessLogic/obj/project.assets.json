@@ -70,11 +70,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic/Cine.BusinessLogic.csproj",
+      "projectUniqueName": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.BusinessLogic/Cine.BusinessLogic.csproj",
       "projectName": "Cine.BusinessLogic",
-      "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic/Cine.BusinessLogic.csproj",
+      "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.BusinessLogic/Cine.BusinessLogic.csproj",
       "packagesPath": "/Users/bacosta/.nuget/packages/",
-      "outputPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic/obj/",
+      "outputPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.BusinessLogic/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/bacosta/.nuget/NuGet/NuGet.Config"
@@ -89,14 +89,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj": {
-              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj"
+            "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.BusinessLogic.Abstractions/Cine.BusinessLogic.Abstractions.csproj"
             },
-            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj": {
-              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj"
+            "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj"
             },
-            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj": {
-              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj"
+            "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository/Cine.Repository.csproj": {}
+    "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository/Cine.Repository.csproj": {}
   },
   "projects": {
-    "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj": {
+    "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj",
+        "projectUniqueName": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj",
         "projectName": "Cine.Domain",
-        "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj",
+        "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj",
         "packagesPath": "/Users/bacosta/.nuget/packages/",
-        "outputPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/obj/",
+        "outputPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bacosta/.nuget/NuGet/NuGet.Config"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj": {
+    "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj",
+        "projectUniqueName": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj",
         "projectName": "Cine.Repository.Abstractions",
-        "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj",
+        "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj",
         "packagesPath": "/Users/bacosta/.nuget/packages/",
-        "outputPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/obj/",
+        "outputPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository.Abstractions/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bacosta/.nuget/NuGet/NuGet.Config"
@@ -84,8 +84,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj": {
-                "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj"
+              "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj": {
+                "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj"
               }
             }
           }
@@ -124,14 +124,14 @@
         }
       }
     },
-    "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository/Cine.Repository.csproj": {
+    "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository/Cine.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository/Cine.Repository.csproj",
+        "projectUniqueName": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository/Cine.Repository.csproj",
         "projectName": "Cine.Repository",
-        "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository/Cine.Repository.csproj",
+        "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository/Cine.Repository.csproj",
         "packagesPath": "/Users/bacosta/.nuget/packages/",
-        "outputPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository/obj/",
+        "outputPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bacosta/.nuget/NuGet/NuGet.Config"
@@ -146,11 +146,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj": {
-                "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj"
+              "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj": {
+                "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj"
               },
-              "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj": {
-                "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj"
+              "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj": {
+                "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository.Abstractions/Cine.Repository.Abstractions.csproj"
               }
             }
           }

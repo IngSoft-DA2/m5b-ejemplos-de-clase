@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj": {}
+    "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj": {}
   },
   "projects": {
-    "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj": {
+    "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj",
+        "projectUniqueName": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj",
         "projectName": "Cine.Domain",
-        "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj",
+        "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj",
         "packagesPath": "/Users/bacosta/.nuget/packages/",
-        "outputPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/obj/",
+        "outputPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/bacosta/.nuget/NuGet/NuGet.Config"

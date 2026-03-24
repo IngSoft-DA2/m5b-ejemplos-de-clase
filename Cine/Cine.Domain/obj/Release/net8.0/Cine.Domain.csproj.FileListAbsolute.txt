@@ -10,3 +10,15 @@
 /Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/obj/Release/net8.0/refint/Cine.Domain.dll
 /Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/obj/Release/net8.0/Cine.Domain.pdb
 /Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/obj/Release/net8.0/ref/Cine.Domain.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/bin/Release/net8.0/Cine.Domain.deps.json
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/bin/Release/net8.0/Cine.Domain.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/bin/Release/net8.0/Cine.Domain.pdb
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/Release/net8.0/Cine.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/Release/net8.0/Cine.Domain.AssemblyInfoInputs.cache
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/Release/net8.0/Cine.Domain.AssemblyInfo.cs
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/Release/net8.0/Cine.Domain.csproj.CoreCompileInputs.cache
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/Release/net8.0/Cine.Domain.sourcelink.json
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/Release/net8.0/Cine.Domain.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/Release/net8.0/refint/Cine.Domain.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/Release/net8.0/Cine.Domain.pdb
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/obj/Release/net8.0/ref/Cine.Domain.dll

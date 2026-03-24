@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cine.Repository.Abstractions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+801ffc2b09097d28e0a6b2baa4d1dc77e02434ea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2e2a0164df60e83c4525654a5486a1bf769f671")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cine.Repository.Abstractions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cine.Repository.Abstractions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

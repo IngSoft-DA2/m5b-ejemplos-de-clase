@@ -48,11 +48,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Mappings/Cine.Mappings.csproj",
+      "projectUniqueName": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Mappings/Cine.Mappings.csproj",
       "projectName": "Cine.Mappings",
-      "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Mappings/Cine.Mappings.csproj",
+      "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Mappings/Cine.Mappings.csproj",
       "packagesPath": "/Users/bacosta/.nuget/packages/",
-      "outputPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Mappings/obj/",
+      "outputPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Mappings/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/bacosta/.nuget/NuGet/NuGet.Config"
@@ -67,11 +67,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Contracts/Cine.Contracts.csproj": {
-              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Contracts/Cine.Contracts.csproj"
+            "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/Cine.Contracts.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/Cine.Contracts.csproj"
             },
-            "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj": {
-              "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Domain/Cine.Domain.csproj"
+            "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj": {
+              "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Domain/Cine.Domain.csproj"
             }
           }
         }

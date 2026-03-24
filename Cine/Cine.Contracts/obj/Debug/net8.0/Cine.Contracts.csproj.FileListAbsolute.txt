@@ -1,0 +1,12 @@
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/bin/Debug/net8.0/Cine.Contracts.deps.json
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/bin/Debug/net8.0/Cine.Contracts.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/bin/Debug/net8.0/Cine.Contracts.pdb
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/obj/Debug/net8.0/Cine.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/obj/Debug/net8.0/Cine.Contracts.AssemblyInfoInputs.cache
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/obj/Debug/net8.0/Cine.Contracts.AssemblyInfo.cs
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/obj/Debug/net8.0/Cine.Contracts.csproj.CoreCompileInputs.cache
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/obj/Debug/net8.0/Cine.Contracts.sourcelink.json
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/obj/Debug/net8.0/Cine.Contracts.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/obj/Debug/net8.0/refint/Cine.Contracts.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/obj/Debug/net8.0/Cine.Contracts.pdb
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/obj/Debug/net8.0/ref/Cine.Contracts.dll

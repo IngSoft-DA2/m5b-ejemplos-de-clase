@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Cine.BusinessLogic.Abstractions
-build_property.ProjectDir = /Users/bacosta/ORT2026S1/M5B/Cine/Cine.BusinessLogic.Abstractions/
+build_property.ProjectDir = /Users/bacosta/ORT2026S1/N5B/Cine/Cine.BusinessLogic.Abstractions/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
