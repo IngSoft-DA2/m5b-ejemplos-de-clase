@@ -8,6 +8,16 @@ namespace Cine.Tests;
 [TestClass]
 public sealed class MovieServiceTests
 {
+    private Mock<IMovieRepository> _repositoryMock = null!;
+    private MovieService _service = null!;
+
+    [TestInitialize]
+    public void TestInitialize()
+    {
+        _repositoryMock = new Mock<IMovieRepository>(MockBehavior.Strict);
+        _service = new MovieService(_repositoryMock.Object);
+    }
+
     [TestMethod]
     public void GetAll_DelegatesToRepository()
     {
@@ -17,15 +27,12 @@ public sealed class MovieServiceTests
             new() { Id = 2, Title = "B", Stars = 3 }
         };
 
-        var repositoryMock = new Mock<IMovieRepository>(MockBehavior.Strict);
-        repositoryMock.Setup(r => r.GetAll()).Returns(movies);
+        _repositoryMock.Setup(r => r.GetAll()).Returns(movies);
 
-        var service = new MovieService(repositoryMock.Object);
-
-        var result = service.GetAll();
+        var result = _service.GetAll();
 
         Assert.AreSame(movies, result);
-        repositoryMock.VerifyAll();
+        _repositoryMock.VerifyAll();
     }
 
     [TestMethod]
@@ -33,48 +40,36 @@ public sealed class MovieServiceTests
     {
         var movie = new Movie { Id = 10, Title = "A", Stars = 4 };
 
-        var repositoryMock = new Mock<IMovieRepository>(MockBehavior.Strict);
-        repositoryMock.Setup(r => r.GetById(10)).Returns(movie);
+        _repositoryMock.Setup(r => r.GetById(10)).Returns(movie);
 
-        var service = new MovieService(repositoryMock.Object);
-
-        var result = service.GetById(10);
+        var result = _service.GetById(10);
 
         Assert.AreEqual(movie, result);
-        repositoryMock.VerifyAll();
+        _repositoryMock.VerifyAll();
     }
 
     [TestMethod]
     public void Create_WhenTitleIsBlank_ThrowsArgumentException()
     {
-        var repositoryMock = new Mock<IMovieRepository>(MockBehavior.Strict);
-        var service = new MovieService(repositoryMock.Object);
+        Assert.ThrowsException<ArgumentException>(() => _service.Create(new Movie { Id = 1, Title = " ", Stars = 4 }));
 
-        Assert.ThrowsException<ArgumentException>(() => service.Create(new Movie { Id = 1, Title = " ", Stars = 4 }));
-
-        repositoryMock.VerifyNoOtherCalls();
+        _repositoryMock.VerifyNoOtherCalls();
     }
 
     [TestMethod]
     public void Create_WhenStarsBelowZero_ThrowsArgumentOutOfRangeException()
     {
-        var repositoryMock = new Mock<IMovieRepository>(MockBehavior.Strict);
-        var service = new MovieService(repositoryMock.Object);
+        Assert.ThrowsException<ArgumentOutOfRangeException>(() => _service.Create(new Movie { Id = 1, Title = "A", Stars = -0.1 }));
 
-        Assert.ThrowsException<ArgumentOutOfRangeException>(() => service.Create(new Movie { Id = 1, Title = "A", Stars = -0.1 }));
-
-        repositoryMock.VerifyNoOtherCalls();
+        _repositoryMock.VerifyNoOtherCalls();
     }
 
     [TestMethod]
     public void Create_WhenStarsAboveFive_ThrowsArgumentOutOfRangeException()
     {
-        var repositoryMock = new Mock<IMovieRepository>(MockBehavior.Strict);
-        var service = new MovieService(repositoryMock.Object);
+        Assert.ThrowsException<ArgumentOutOfRangeException>(() => _service.Create(new Movie { Id = 1, Title = "A", Stars = 5.1 }));
 
-        Assert.ThrowsException<ArgumentOutOfRangeException>(() => service.Create(new Movie { Id = 1, Title = "A", Stars = 5.1 }));
-
-        repositoryMock.VerifyNoOtherCalls();
+        _repositoryMock.VerifyNoOtherCalls();
     }
 
     [TestMethod]
@@ -83,44 +78,35 @@ public sealed class MovieServiceTests
         var input = new Movie { Id = 123, Title = "A", Stars = 4 };
         var created = new Movie { Id = 1, Title = "A", Stars = 4 };
 
-        var repositoryMock = new Mock<IMovieRepository>(MockBehavior.Strict);
-        repositoryMock
+        _repositoryMock
             .Setup(r => r.Add(It.Is<Movie>(m => m.Id == 0 && m.Title == "A" && m.Stars == 4)))
             .Returns(created);
 
-        var service = new MovieService(repositoryMock.Object);
-
-        var result = service.Create(input);
+        var result = _service.Create(input);
 
         Assert.AreEqual(created, result);
-        repositoryMock.VerifyAll();
+        _repositoryMock.VerifyAll();
     }
 
     [TestMethod]
     public void Update_WhenValid_DelegatesToRepository()
     {
-        var repositoryMock = new Mock<IMovieRepository>(MockBehavior.Strict);
-        repositoryMock.Setup(r => r.Update(10, It.Is<Movie>(m => m.Title == "A" && m.Stars == 4))).Returns(true);
+        _repositoryMock.Setup(r => r.Update(10, It.Is<Movie>(m => m.Title == "A" && m.Stars == 4))).Returns(true);
 
-        var service = new MovieService(repositoryMock.Object);
-
-        var result = service.Update(10, new Movie { Id = 999, Title = "A", Stars = 4 });
+        var result = _service.Update(10, new Movie { Id = 999, Title = "A", Stars = 4 });
 
         Assert.IsTrue(result);
-        repositoryMock.VerifyAll();
+        _repositoryMock.VerifyAll();
     }
 
     [TestMethod]
     public void Delete_DelegatesToRepository()
     {
-        var repositoryMock = new Mock<IMovieRepository>(MockBehavior.Strict);
-        repositoryMock.Setup(r => r.Delete(10)).Returns(true);
+        _repositoryMock.Setup(r => r.Delete(10)).Returns(true);
 
-        var service = new MovieService(repositoryMock.Object);
-
-        var result = service.Delete(10);
+        var result = _service.Delete(10);
 
         Assert.IsTrue(result);
-        repositoryMock.VerifyAll();
+        _repositoryMock.VerifyAll();
     }
 }

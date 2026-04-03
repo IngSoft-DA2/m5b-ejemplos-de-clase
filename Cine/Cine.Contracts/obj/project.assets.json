@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Contracts/Cine.Contracts.csproj",
+      "projectUniqueName": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/Cine.Contracts.csproj",
       "projectName": "Cine.Contracts",
-      "projectPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Contracts/Cine.Contracts.csproj",
+      "projectPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/Cine.Contracts.csproj",
       "packagesPath": "/Users/bacosta/.nuget/packages/",
-      "outputPath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Contracts/obj/",
+      "outputPath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Contracts/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/bacosta/.nuget/NuGet/NuGet.Config"

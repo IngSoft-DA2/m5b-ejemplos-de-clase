@@ -2,6 +2,7 @@ using Cine.BusinessLogic;
 using Cine.BusinessLogic.Abstractions;
 using Cine.Repository;
 using Cine.Repository.Abstractions;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,19 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-builder.Services.AddSingleton<IMovieRepository, InMemoryMovieRepository>();
+
+var connectionString = builder.Configuration.GetConnectionString("CineDb");
+if (!string.IsNullOrWhiteSpace(connectionString))
+{
+    builder.Services.AddDbContext<CineDbContext>(options =>
+        options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 0))));
+    builder.Services.AddScoped<IMovieRepository, EfMovieRepository>();
+}
+else
+{
+    builder.Services.AddSingleton<IMovieRepository, InMemoryMovieRepository>();
+}
+
 builder.Services.AddScoped<IMovieService, MovieService>();
 
 var app = builder.Build();

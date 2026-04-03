@@ -11,6 +11,16 @@ namespace Cine.Tests;
 [TestClass]
 public sealed class MoviesControllerTests
 {
+    private Mock<IMovieService> _movieServiceMock = null!;
+    private MoviesController _controller = null!;
+
+    [TestInitialize]
+    public void TestInitialize()
+    {
+        _movieServiceMock = new Mock<IMovieService>(MockBehavior.Strict);
+        _controller = new MoviesController(_movieServiceMock.Object);
+    }
+
     [TestMethod]
     public void GetAll_ReturnsOkWithDtos()
     {
@@ -20,12 +30,9 @@ public sealed class MoviesControllerTests
             new() { Id = 2, Title = "B", Stars = 3 }
         };
 
-        var movieServiceMock = new Mock<IMovieService>(MockBehavior.Strict);
-        movieServiceMock.Setup(s => s.GetAll()).Returns(movies);
+        _movieServiceMock.Setup(s => s.GetAll()).Returns(movies);
 
-        var controller = new MoviesController(movieServiceMock.Object);
-
-        var response = controller.GetAll();
+        var response = _controller.GetAll();
 
         var ok = response.Result as OkObjectResult;
         Assert.IsNotNull(ok);
@@ -36,21 +43,18 @@ public sealed class MoviesControllerTests
         Assert.AreEqual(movies[0].ToDto(), dtos[0]);
         Assert.AreEqual(movies[1].ToDto(), dtos[1]);
 
-        movieServiceMock.VerifyAll();
+        _movieServiceMock.VerifyAll();
     }
 
     [TestMethod]
     public void GetById_WhenNotFound_ReturnsNotFound()
     {
-        var movieServiceMock = new Mock<IMovieService>(MockBehavior.Strict);
-        movieServiceMock.Setup(s => s.GetById(10)).Returns((Movie?)null);
+        _movieServiceMock.Setup(s => s.GetById(10)).Returns((Movie?)null);
 
-        var controller = new MoviesController(movieServiceMock.Object);
-
-        var response = controller.GetById(10);
+        var response = _controller.GetById(10);
 
         Assert.IsInstanceOfType<NotFoundResult>(response.Result);
-        movieServiceMock.VerifyAll();
+        _movieServiceMock.VerifyAll();
     }
 
     [TestMethod]
@@ -58,18 +62,15 @@ public sealed class MoviesControllerTests
     {
         var movie = new Movie { Id = 10, Title = "A", Stars = 4 };
 
-        var movieServiceMock = new Mock<IMovieService>(MockBehavior.Strict);
-        movieServiceMock.Setup(s => s.GetById(10)).Returns(movie);
+        _movieServiceMock.Setup(s => s.GetById(10)).Returns(movie);
 
-        var controller = new MoviesController(movieServiceMock.Object);
-
-        var response = controller.GetById(10);
+        var response = _controller.GetById(10);
 
         var ok = response.Result as OkObjectResult;
         Assert.IsNotNull(ok);
         Assert.AreEqual(movie.ToDto(), ok.Value as MovieDto);
 
-        movieServiceMock.VerifyAll();
+        _movieServiceMock.VerifyAll();
     }
 
     [TestMethod]
@@ -78,14 +79,11 @@ public sealed class MoviesControllerTests
         var inputDto = new MovieDto { Id = 123, Title = "A", Stars = 4 };
         var created = new Movie { Id = 10, Title = "A", Stars = 4 };
 
-        var movieServiceMock = new Mock<IMovieService>(MockBehavior.Strict);
-        movieServiceMock
+        _movieServiceMock
             .Setup(s => s.Create(It.Is<Movie>(m => m.Id == 123 && m.Title == "A" && m.Stars == 4)))
             .Returns(created);
 
-        var controller = new MoviesController(movieServiceMock.Object);
-
-        var response = controller.Create(inputDto);
+        var response = _controller.Create(inputDto);
 
         var createdAt = response.Result as CreatedAtActionResult;
         Assert.IsNotNull(createdAt);
@@ -93,7 +91,7 @@ public sealed class MoviesControllerTests
         Assert.AreEqual(10, createdAt.RouteValues?["id"]);
         Assert.AreEqual(created.ToDto(), createdAt.Value as MovieDto);
 
-        movieServiceMock.VerifyAll();
+        _movieServiceMock.VerifyAll();
     }
 
     [TestMethod]
@@ -101,17 +99,14 @@ public sealed class MoviesControllerTests
     {
         var inputDto = new MovieDto { Id = 123, Title = "A", Stars = 4 };
 
-        var movieServiceMock = new Mock<IMovieService>(MockBehavior.Strict);
-        movieServiceMock
+        _movieServiceMock
             .Setup(s => s.Update(10, It.Is<Movie>(m => m.Id == 123 && m.Title == "A" && m.Stars == 4)))
             .Returns(false);
 
-        var controller = new MoviesController(movieServiceMock.Object);
-
-        var response = controller.Update(10, inputDto);
+        var response = _controller.Update(10, inputDto);
 
         Assert.IsInstanceOfType<NotFoundResult>(response);
-        movieServiceMock.VerifyAll();
+        _movieServiceMock.VerifyAll();
     }
 
     [TestMethod]
@@ -119,44 +114,35 @@ public sealed class MoviesControllerTests
     {
         var inputDto = new MovieDto { Id = 123, Title = "A", Stars = 4 };
 
-        var movieServiceMock = new Mock<IMovieService>(MockBehavior.Strict);
-        movieServiceMock
+        _movieServiceMock
             .Setup(s => s.Update(10, It.Is<Movie>(m => m.Id == 123 && m.Title == "A" && m.Stars == 4)))
             .Returns(true);
 
-        var controller = new MoviesController(movieServiceMock.Object);
-
-        var response = controller.Update(10, inputDto);
+        var response = _controller.Update(10, inputDto);
 
         Assert.IsInstanceOfType<NoContentResult>(response);
-        movieServiceMock.VerifyAll();
+        _movieServiceMock.VerifyAll();
     }
 
     [TestMethod]
     public void Delete_WhenNotFound_ReturnsNotFound()
     {
-        var movieServiceMock = new Mock<IMovieService>(MockBehavior.Strict);
-        movieServiceMock.Setup(s => s.Delete(10)).Returns(false);
+        _movieServiceMock.Setup(s => s.Delete(10)).Returns(false);
 
-        var controller = new MoviesController(movieServiceMock.Object);
-
-        var response = controller.Delete(10);
+        var response = _controller.Delete(10);
 
         Assert.IsInstanceOfType<NotFoundResult>(response);
-        movieServiceMock.VerifyAll();
+        _movieServiceMock.VerifyAll();
     }
 
     [TestMethod]
     public void Delete_WhenDeleted_ReturnsNoContent()
     {
-        var movieServiceMock = new Mock<IMovieService>(MockBehavior.Strict);
-        movieServiceMock.Setup(s => s.Delete(10)).Returns(true);
+        _movieServiceMock.Setup(s => s.Delete(10)).Returns(true);
 
-        var controller = new MoviesController(movieServiceMock.Object);
-
-        var response = controller.Delete(10);
+        var response = _controller.Delete(10);
 
         Assert.IsInstanceOfType<NoContentResult>(response);
-        movieServiceMock.VerifyAll();
+        _movieServiceMock.VerifyAll();
     }
 }

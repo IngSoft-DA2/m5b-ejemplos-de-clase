@@ -138,3 +138,15 @@
 /Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/obj/Release/net8.0/Cine.Tests.pdb
 /Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/obj/Release/net8.0/Cine.Tests.genruntimeconfig.cache
 /Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/obj/Release/net8.0/ref/Cine.Tests.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Microsoft.Extensions.Logging.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Microsoft.Extensions.Options.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/MySqlConnector.dll
+/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/bin/Release/net8.0/Pomelo.EntityFrameworkCore.MySql.dll
