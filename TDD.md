@@ -129,3 +129,43 @@ Cuando hacemos pruebas unitarias, queremos probar objetos y la forma en que esto
 Gracias al uso de mocks y de las pruebas unitarias nos vemos forzados a acoplarnos a interfaces y no a implementaciones, lo cual nos provoca un bajo acoplamiento entre clases y sus dependencias.
 
 Esto nos ayuda mucho también en esos componentes que dependen de un recurso externo como por ejemplo una librería de terceros, una red, un archivo o una base de datos.
+
+## Técnicas de diseño: Inside-Out vs Outside-In
+
+Cuando construimos una funcionalidad, hay dos técnicas comunes para “diseñar mientras implementamos” (muy relacionadas con TDD) que cambian desde dónde empezamos:
+
+### Inside-Out (de adentro hacia afuera)
+
+Se empieza por el núcleo del sistema: dominio y reglas de negocio. Recién después se agregan las capas externas (persistencia, API, UI).
+
+Características típicas:
+
+- El primer test suele ser unitario (por ejemplo sobre un servicio de negocio).
+- Se definen entidades y casos de uso primero, y luego se conectan a WebAPI/Repository.
+- Es más natural cuando las reglas de negocio son complejas o inciertas y querés descubrir el modelo.
+
+Riesgos:
+
+- Podés diseñar una API “bonita” internamente pero que no calce con el caso real de uso.
+- Si no hay feedback temprano, se puede avanzar mucho sin validar el comportamiento visible para el usuario.
+
+### Outside-In (de afuera hacia adentro)
+
+Se empieza por el comportamiento observable (lo que el usuario o consumidor necesita). Se define un test de mayor nivel (por ejemplo un test del controller o un test de aceptación), y desde ahí se van introduciendo colaboraciones hacia adentro (interfaces, servicios, dominio).
+
+Características típicas:
+
+- El primer test suele ser de comportamiento (endpoint, caso de uso completo) y luego se descompone en unit tests.
+- Te fuerza a diseñar contratos y dependencias por necesidad: controller → interfaz de business logic → interfaz de repository → implementación.
+- Da feedback temprano de que “la feature existe” desde el punto de vista del consumidor.
+
+Riesgos:
+
+- Si se hace sin criterio, puede degenerar en muchos tests frágiles de capas externas.
+- Requiere cuidado para no confundir “test de aceptación” con “test de integración pesado” (por ejemplo, meter base de datos real sin necesidad).
+
+### Cómo elegir
+
+- Preferí **Outside-In** cuando lo más importante es validar rápido el flujo de uso (contrato HTTP, formato de DTOs, reglas visibles) y cuando hay incertidumbre en los requerimientos.
+- Preferí **Inside-Out** cuando el foco es descubrir el dominio y reglas internas (validaciones, cálculos, invariantes) y querés tests unitarios rápidos y estables desde el inicio.
+- En la práctica se mezclan: podés arrancar Outside-In para fijar el comportamiento, y luego profundizar Inside-Out para modelar bien el dominio y mantenerlo testeable.
