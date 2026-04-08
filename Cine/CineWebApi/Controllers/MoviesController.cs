@@ -1,5 +1,6 @@
 using Cine.BusinessLogic.Abstractions;
 using Cine.Contracts;
+using Cine.Filters;
 using Cine.Mappings;
 using Microsoft.AspNetCore.Mvc;
 
@@ -53,8 +54,10 @@ public class MoviesController : ControllerBase
         return NoContent();
     }
 
-    [HttpDelete("{id:int}")]
-    public IActionResult Delete([FromRoute] int id)
+        [ApiKeyAuthenticationFilter]
+        [HttpDelete("{id:int}")]
+    
+        public IActionResult Delete([FromRoute] int id)
     {
         var deleted = _movieService.Delete(id);
         if (!deleted)

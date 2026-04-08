@@ -65,6 +65,22 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/8.0.13": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.13"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/8.0.13": {
         "type": "package",
         "dependencies": {
@@ -474,6 +490,7 @@
           "Cine.Repository": "1.0.0",
           "Cine.Repository.Abstractions": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.13",
+          "Microsoft.EntityFrameworkCore.InMemory": "8.0.13",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.3"
         },
         "compile": {
@@ -545,6 +562,21 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.8.0.13.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/8.0.13": {
+      "sha512": "0e/vEkQGJ7mwacknDbUsvntuoQYlSWHuYmFDSSlkuwUKf+cKu9sKCaNUA6eH/+OOH2eEyioKMMPS5yp1wN8L+Q==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/8.0.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.8.0.13.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/8.0.13": {

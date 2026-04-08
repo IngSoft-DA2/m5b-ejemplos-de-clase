@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EYJHKl2c6r8=",
+  "dgSpecHash": "yMGPtOFmQ1g=",
   "success": true,
   "projectFilePath": "/Users/bacosta/ORT2026S1/M5B/Cine/CineWebApi/CineWebApi.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/bacosta/.nuget/packages/microsoft.entityframeworkcore/8.0.13/microsoft.entityframeworkcore.8.0.13.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.13/microsoft.entityframeworkcore.abstractions.8.0.13.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.13/microsoft.entityframeworkcore.analyzers.8.0.13.nupkg.sha512",
+    "/Users/bacosta/.nuget/packages/microsoft.entityframeworkcore.inmemory/8.0.13/microsoft.entityframeworkcore.inmemory.8.0.13.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.13/microsoft.entityframeworkcore.relational.8.0.13.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",

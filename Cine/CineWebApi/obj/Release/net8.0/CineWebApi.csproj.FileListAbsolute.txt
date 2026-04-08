@@ -118,3 +118,4 @@
 /Users/bacosta/ORT2026S1/M5B/Cine/CineWebApi/bin/Release/net8.0/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/bacosta/ORT2026S1/M5B/Cine/CineWebApi/bin/Release/net8.0/ServiceFactory.dll
 /Users/bacosta/ORT2026S1/M5B/Cine/CineWebApi/bin/Release/net8.0/ServiceFactory.pdb
+/Users/bacosta/ORT2026S1/M5B/Cine/CineWebApi/bin/Release/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
