@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8tQ6EDVmq00=",
+  "dgSpecHash": "HeKAGO4psHM=",
   "success": true,
-  "projectFilePath": "/Users/bacosta/ORT2026S1/N5B/Cine/Cine.Tests/Cine.Tests.csproj",
+  "projectFilePath": "/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Tests/Cine.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/bacosta/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
