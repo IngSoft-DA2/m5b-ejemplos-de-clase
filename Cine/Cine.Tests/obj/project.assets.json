@@ -1168,6 +1168,7 @@
           "Cine.Repository": "1.0.0",
           "Cine.Repository.Abstractions": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.13",
+          "Microsoft.EntityFrameworkCore.InMemory": "8.0.13",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.3"
         },
         "compile": {

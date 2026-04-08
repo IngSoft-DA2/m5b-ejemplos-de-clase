@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+t8rmNwFKko=",
+  "dgSpecHash": "+/e8aqbAl7U=",
   "success": true,
   "projectFilePath": "/Users/bacosta/ORT2026S1/M5B/Cine/ServiceFactory/ServiceFactory.csproj",
   "expectedPackageFiles": [
     "/Users/bacosta/.nuget/packages/microsoft.entityframeworkcore/8.0.13/microsoft.entityframeworkcore.8.0.13.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.13/microsoft.entityframeworkcore.abstractions.8.0.13.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.13/microsoft.entityframeworkcore.analyzers.8.0.13.nupkg.sha512",
+    "/Users/bacosta/.nuget/packages/microsoft.entityframeworkcore.inmemory/8.0.13/microsoft.entityframeworkcore.inmemory.8.0.13.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.13/microsoft.entityframeworkcore.relational.8.0.13.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/Users/bacosta/.nuget/packages/microsoft.extensions.caching.memory/8.0.1/microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",

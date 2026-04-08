@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cine.BusinessLogic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1bac1f8e4e4b141d555805009b8f9343e68da93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c31dccaae42cdeb52b29c06ad55c4f385a1010f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cine.BusinessLogic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cine.BusinessLogic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7,7 +7,7 @@ public sealed class InMemoryMovieRepository : IMovieRepository
 {
     
 
-    private readonly List<Movie> _movies =
+    private List<Movie> _movies =
     [
         new Movie { Id = 1, Title = "Una batalla tras otra", Stars = 5.0 },
         new Movie { Id = 2, Title = "Hoppers", Stars = 4.3 },
