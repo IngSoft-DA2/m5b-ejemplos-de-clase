@@ -34,3 +34,5 @@
 /Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository/obj/Release/net8.0/refint/Cine.Repository.dll
 /Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository/obj/Release/net8.0/Cine.Repository.pdb
 /Users/bacosta/ORT2026S1/N5B/Cine/Cine.Repository/obj/Release/net8.0/ref/Cine.Repository.dll
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository/bin/Release/net8.0/Cine.Repository.runtimeconfig.json
+/Users/bacosta/ORT2026S1/M5B/Cine/Cine.Repository/obj/Release/net8.0/Cine.Repository.genruntimeconfig.cache

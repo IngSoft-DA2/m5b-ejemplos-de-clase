@@ -8,16 +8,12 @@
     ".NETCoreApp,Version=v8.0": {
       "CineWebApi/1.0.0": {
         "dependencies": {
-          "Cine.BusinessLogic": "1.0.0",
           "Cine.BusinessLogic.Abstractions": "1.0.0",
           "Cine.Contracts": "1.0.0",
-          "Cine.Domain": "1.0.0",
           "Cine.Mappings": "1.0.0",
-          "Cine.Repository": "1.0.0",
           "Cine.Repository.Abstractions": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.13",
-          "Microsoft.EntityFrameworkCore": "8.0.13",
-          "Pomelo.EntityFrameworkCore.MySql": "8.0.3",
+          "ServiceFactory": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
@@ -276,6 +272,19 @@
         "runtime": {
           "Cine.Repository.Abstractions.dll": {}
         }
+      },
+      "ServiceFactory/1.0.0": {
+        "dependencies": {
+          "Cine.BusinessLogic": "1.0.0",
+          "Cine.BusinessLogic.Abstractions": "1.0.0",
+          "Cine.Repository": "1.0.0",
+          "Cine.Repository.Abstractions": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.13",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.3"
+        },
+        "runtime": {
+          "ServiceFactory.dll": {}
+        }
       }
     }
   },
@@ -470,6 +479,11 @@
       "sha512": ""
     },
     "Cine.Repository.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServiceFactory/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

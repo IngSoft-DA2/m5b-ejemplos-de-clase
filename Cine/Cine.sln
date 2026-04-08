@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cine.Repository.Abstraction
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cine.Tests", "Cine.Tests\Cine.Tests.csproj", "{C8143E0F-C927-4E47-82F8-EB805E8927E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceFactory", "ServiceFactory\ServiceFactory.csproj", "{7F6E1F6A-8CA7-49BE-8171-3DFF07DAF3B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,5 +63,9 @@ Global
 		{C8143E0F-C927-4E47-82F8-EB805E8927E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8143E0F-C927-4E47-82F8-EB805E8927E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8143E0F-C927-4E47-82F8-EB805E8927E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F6E1F6A-8CA7-49BE-8171-3DFF07DAF3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6E1F6A-8CA7-49BE-8171-3DFF07DAF3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F6E1F6A-8CA7-49BE-8171-3DFF07DAF3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F6E1F6A-8CA7-49BE-8171-3DFF07DAF3B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

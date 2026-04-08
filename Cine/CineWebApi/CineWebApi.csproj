@@ -9,23 +9,15 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.13" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.13" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.13">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Cine.Domain\Cine.Domain.csproj" />
       <ProjectReference Include="..\Cine.Contracts\Cine.Contracts.csproj" />
       <ProjectReference Include="..\Cine.Mappings\Cine.Mappings.csproj" />
-      <ProjectReference Include="..\Cine.BusinessLogic\Cine.BusinessLogic.csproj" />
-      <ProjectReference Include="..\Cine.Repository\Cine.Repository.csproj" />
       <ProjectReference Include="..\Cine.BusinessLogic.Abstractions\Cine.BusinessLogic.Abstractions.csproj" />
       <ProjectReference Include="..\Cine.Repository.Abstractions\Cine.Repository.Abstractions.csproj" />
+      <ProjectReference Include="..\ServiceFactory\ServiceFactory.csproj" />
     </ItemGroup>
 
 </Project>
