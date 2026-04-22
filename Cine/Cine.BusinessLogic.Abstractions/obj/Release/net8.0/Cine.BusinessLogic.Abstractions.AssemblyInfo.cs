@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cine.BusinessLogic.Abstractions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c31dccaae42cdeb52b29c06ad55c4f385a1010f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bb5c697ea57eb530eaa65ec43081dcdc1a6f409")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cine.BusinessLogic.Abstractions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cine.BusinessLogic.Abstractions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
