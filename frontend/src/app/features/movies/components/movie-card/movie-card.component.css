@@ -1,0 +1,81 @@
+.movie-card {
+    background-color: #2a2a2a; /* Fondo oscuro de la tarjeta */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    overflow: hidden; /* Asegura que el póster respete los bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra para darle profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el efecto hover */
+    display: flex;
+    flex-direction: column; /* Apila el póster y la información verticalmente */
+    height: 100%; /* Permite que las tarjetas en un grid ocupen toda la altura disponible */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Aumenta la sombra al pasar el ratón */
+  }
+  
+  .movie-poster {
+    width: 100%; /* El póster ocupa todo el ancho de la tarjeta */
+    height: 380px; /* Altura fija para todos los pósters (ajustar según necesidad) */
+    object-fit: cover; /* Recorta la imagen para que cubra el área sin distorsionarla */
+    display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+    border-bottom: 1px solid #444; /* Línea sutil para separar el póster del texto */
+  }
+  
+  .movie-info {
+    padding: 15px; /* Espacio interno alrededor del texto */
+    flex-grow: 1; /* Permite que este bloque crezca y ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empuja el contenido hacia arriba y abajo */
+    color: #e0e0e0; /* Color de texto predeterminado para la información */
+  }
+  
+  .movie-info h3 {
+    font-size: 1.5em; /* Tamaño de fuente para el título de la película */
+    margin-top: 0; /* Elimina el margen superior predeterminado */
+    margin-bottom: 10px; /* Margen inferior para separar del párrafo */
+    line-height: 1.3; /* Espaciado entre líneas para títulos largos */
+    color: #ffffff; /* Color del título en blanco */
+  }
+  
+  .movie-info h3 a {
+    text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+    color: inherit; /* Hereda el color de texto del padre (h3) */
+    transition: color 0.2s ease; /* Transición suave para el cambio de color al hover */
+  }
+  
+  .movie-info h3 a:hover {
+    color: #007bff; /* Color azul al pasar el ratón por el título-enlace */
+  }
+  
+  .movie-info p {
+    font-size: 0.95em; /* Tamaño de fuente para la información adicional (año, género) */
+    margin-bottom: 5px; /* Pequeño margen inferior */
+    color: #a0a0a0; /* Color de texto más tenue para la información secundaria */
+  }
+  
+  /* --- Adaptaciones responsivas (si es necesario para el propio componente) --- */
+  /* Normalmente, el tamaño de la tarjeta lo maneja más la grid del padre (MovieListComponent) */
+  /* Pero si se usa la tarjeta de forma independiente, estos estilos serían útiles. */
+  @media (max-width: 768px) {
+    .movie-poster {
+      height: 280px; /* Ajusta la altura del póster para pantallas más pequeñas */
+    }
+    .movie-info h3 {
+      font-size: 1.3em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-poster {
+      height: 240px; /* Ajusta la altura del póster para móviles */
+    }
+    .movie-info h3 {
+      font-size: 1.2em;
+    }
+    .movie-info p {
+      font-size: 0.9em;
+    }
+  }

@@ -1,0 +1,10 @@
+<div class="movie-card" (click)="onMovieClick()">
+    <img [src]="movie.posterUrl" alt="{{ movie.title }} poster" class="movie-poster">
+    <div class="movie-info">
+      <h3>
+        <a [routerLink]="['/movies', movie.id]">{{ movie.title }}</a>
+      </h3>
+      <p>Año: {{ movie.releaseYear }}</p>
+      <p>Género: {{ movie.genre }}</p>
+    </div>
+  </div>

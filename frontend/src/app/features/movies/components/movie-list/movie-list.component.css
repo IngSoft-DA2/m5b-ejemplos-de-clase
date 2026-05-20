@@ -1,0 +1,166 @@
+.movie-list-container {
+    max-width: 1200px; /* Ancho máximo del contenedor principal */
+    margin: 40px auto; /* Centra el contenedor y le da margen superior/inferior */
+    padding: 20px;
+    background-color: #1a1a1a; /* Fondo oscuro similar a un cine */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra sutil para profundidad */
+    color: #e0e0e0; /* Color de texto claro */
+  }
+  
+  .movie-list-container h2 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    color: #ffffff; /* Título en blanco */
+    border-bottom: 2px solid #007bff; /* Línea azul debajo del título */
+    padding-bottom: 10px;
+    display: inline-block; /* Para que la línea se ajuste al texto */
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+  
+  /* --- Mensajes de estado (cargando, error, sin películas) --- */
+  .loading-message,
+  .error-message,
+  .no-movies-message {
+    text-align: center;
+    padding: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .loading-message {
+    background-color: #333;
+    color: #ffc107; /* Amarillo para indicar carga */
+  }
+  
+  .error-message {
+    background-color: #400000;
+    color: #dc3545; /* Rojo para errores */
+    border: 1px solid #dc3545;
+  }
+  
+  .no-movies-message {
+    background-color: #2a2a2a;
+    color: #a0a0a0;
+    border: 1px dashed #555;
+  }
+  
+  /* --- Cuadrícula de películas --- */
+  .movie-grid {
+    display: grid;
+    /* Utiliza auto-fit para que las columnas se ajusten automáticamente */
+    /* minmax(250px, 1fr) asegura que cada tarjeta tenga al menos 250px de ancho */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; /* Espacio entre las tarjetas */
+    padding: 20px 0;
+  }
+  
+  /* --- Estilo de cada tarjeta de película (MovieCardComponent) --- */
+  /* Aunque movie-card es un componente hijo, a veces es útil tener estilos globales o defaults */
+  /* Sin embargo, idealmente, estos estilos deberían ir en movie-card.component.css */
+  /* Lo incluyo aquí para que veas el conjunto completo si no usas un componente MovieCard aparte */
+  
+  .movie-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden; /* Para que la imagen respete los bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Apila el póster y la información */
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura en la fila */
+    cursor: pointer; /* Indica que la tarjeta es clickeable */
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px); /* Pequeño efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: 380px; /* Altura fija para los pósters */
+    object-fit: cover; /* Recorta la imagen para que cubra el área */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    border-bottom: 1px solid #444; /* Separador sutil */
+  }
+  
+  .movie-info {
+    padding: 15px;
+    flex-grow: 1; /* Permite que la información ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empuja el contenido hacia arriba y abajo */
+  }
+  
+  .movie-info h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    color: #ffffff;
+  }
+  
+  .movie-info h3 a {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: inherit; /* Hereda el color del padre */
+    transition: color 0.2s ease;
+  }
+  
+  .movie-info h3 a:hover {
+    color: #007bff; /* Color azul al pasar el ratón por el título */
+  }
+  
+  .movie-info p {
+    font-size: 0.95em;
+    margin-bottom: 5px;
+    color: #a0a0a0; /* Texto secundario más claro */
+  }
+  
+  /* --- Adaptaciones responsivas --- */
+  @media (max-width: 768px) {
+    .movie-list-container {
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    .movie-list-container h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+  
+    .movie-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Más pequeñas en móviles */
+      gap: 20px;
+    }
+  
+    .movie-poster {
+      height: 280px; /* Ajusta la altura del póster para pantallas más pequeñas */
+    }
+  
+    .movie-info h3 {
+      font-size: 1.3em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-list-container {
+      padding: 10px;
+    }
+    .movie-list-container h2 {
+      font-size: 1.8em;
+    }
+    .movie-grid {
+      grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+    .movie-card {
+      max-width: 300px; /* Limita el ancho de la tarjeta en móviles */
+      margin: 0 auto; /* Centra la tarjeta */
+    }
+  }

@@ -1,0 +1,17 @@
+<div class="movie-list-container">
+  <h2>Películas Destacadas</h2>
+
+  <div *ngIf="isLoading" class="loading-message">Cargando películas...</div>
+  <div *ngIf="error" [ngClass]="errorClass">{{ error }}</div>
+
+  <div *ngIf="!isLoading && !error && movies.length > 0" class="movie-grid">
+    <app-movie-card *ngFor="let movie of movies" [movie]="movie"></app-movie-card>
+  </div>
+
+  <div
+    *ngIf="!isLoading && !error && movies.length === 0"
+    class="no-movies-message"
+  >
+    No se encontraron películas.
+  </div>
+</div>

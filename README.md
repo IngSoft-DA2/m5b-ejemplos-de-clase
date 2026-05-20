@@ -248,6 +248,8 @@ Plugins recomendados:
 
 ## El Ciclo de Vida del Componente en Angular
 
+![alt text](image-4.png)
+
 Los principales hooks, en orden de ejecución, son:
 
 ## 1. `ngOnChanges()`

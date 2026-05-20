@@ -1,0 +1,27 @@
+<div class="movie-details-container">
+    <button class="back-button" [routerLink]="['/movies']">← Volver a la Lista</button>
+  
+    <div *ngIf="isLoading" class="loading-message">Cargando detalles de la película...</div>
+  
+    <div *ngIf="error" class="error-message">{{ error }}</div>
+  
+    <div *ngIf="!isLoading && movie" class="movie-details-card">
+      <div class="movie-poster-wrapper">
+        <img [src]="movie.posterUrl" alt="{{ movie.title }} poster" class="movie-detail-poster">
+      </div>
+      <div class="movie-info-details">
+        <h2>{{ movie.title }}</h2>
+        <p><strong>Año de Estreno:</strong> {{ movie.releaseYear }}</p>
+        <p><strong>Género:</strong> {{ movie.genre }}</p>
+        <hr>
+        <h3>Sinopsis:</h3>
+        <p>{{ movie.overview }}</p>
+        </div>
+    </div>
+  
+    <div *ngIf="!isLoading && !movie && !error" class="no-movie-found">
+      La película solicitada no fue encontrada.
+    </div>
+  </div>
+  
+  

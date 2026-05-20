@@ -50,6 +50,10 @@ Parámetros:
     ng serve --open
     ```
     
+### Ver ejemplo de estructura
+[Estructura posible](estructura.md)
+
+
 
 # Referencia
 
