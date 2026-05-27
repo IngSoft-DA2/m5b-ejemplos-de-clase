@@ -3,15 +3,29 @@ import { catchError, map, Observable, of } from 'rxjs';
 import { Movie } from '../models/movie.model.js';
 import { HttpClient } from '@angular/common/http';
 
+// ── Importamos las variables de entorno ───────────────────────────────────────
+// En lugar de hardcodear la URL y la API key aquí, las leemos del archivo
+// de entorno. Angular reemplazará este import con environment.prod.ts
+// automáticamente cuando hagamos `ng build --configuration production`.
+import { environment } from '../../../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class MovieService {
-  private apiUrl = 'https://api.themoviedb.org/3';
-  private apiKey = '36eb10aa56ea823b1b3c7370a05aeb09';
+
+  // ── Usamos las variables del entorno en lugar de strings literales ─────────
+  // Si mañana cambia la URL del API, solo tocamos environment.ts,
+  // no tenemos que buscar el string hardcodeado en todos los services.
+  private apiUrl = environment.apiUrl;
+  private apiKey = environment.apiKey;
 
   constructor(private http: HttpClient) { }
 
+  // ── Nota sobre el interceptor ──────────────────────────────────────────────
+  // Este service NO necesita agregar el header Authorization manualmente.
+  // El authInterceptor registrado en app.config.ts lo agrega solo,
+  // interceptando esta llamada antes de que llegue al servidor.
   getMovies(): Observable<Movie[]> {
     return this.http.get<any>(`${this.apiUrl}/movie/popular?api_key=${this.apiKey}`).pipe(
       map(response => response.results.map((item: any) => ({

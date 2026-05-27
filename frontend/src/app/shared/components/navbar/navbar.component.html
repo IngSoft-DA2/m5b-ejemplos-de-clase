@@ -1,10 +1,30 @@
+<!-- ─────────────────────────────────────────────────────────────────────────
+  NAVBAR TEMPLATE
+
+  Aquí demostramos el pipe en acción:
+    {{ authService.getUserRole() | userRole }}
+
+  El pipe transforma el string técnico ('user', 'guest') en una etiqueta
+  con ícono legible para el usuario final, sin lógica extra en el componente.
+──────────────────────────────────────────────────────────────────────────── -->
 <nav class="navbar">
   <div class="navbar-brand">
-    <a routerLink="/">Movie Manager</a>
+    <a routerLink="/">🎬 Movie Manager</a>
   </div>
+
   <ul class="navbar-links">
     <li><a routerLink="/movies">Movies</a></li>
     <li><a routerLink="/actors">Actors</a></li>
-    <li><a routerLink="/login">Login</a></li>
   </ul>
+
+  <div class="navbar-auth">
+    <!-- Mostramos el rol transformado por el pipe solo cuando hay sesión activa -->
+    @if (authService.isUserLogged()) {
+      <!-- El pipe 'userRole' convierte 'user' → '🎬 Usuario' -->
+      <span class="user-role">{{ authService.getUserRole() | userRole }}</span>
+      <button (click)="logout()">Cerrar sesión</button>
+    } @else {
+      <a routerLink="/login">Iniciar sesión</a>
+    }
+  </div>
 </nav>
