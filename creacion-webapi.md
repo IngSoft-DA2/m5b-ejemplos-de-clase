@@ -6,7 +6,7 @@ Es conveniente, antes de empezar, cerciorarnos que estamos trabajando con la ver
 dotnet --version
 ```
 
-Debería retornar la versión instalada de .NET 8.
+Debería retornar la versión instalada de .NET 10.
 
 Ahora si, comenzamos:
 
@@ -17,19 +17,19 @@ Ahora si, comenzamos:
 2.	Utiliza el siguiente comando para crear una solución:
 
 ```bash
-dotnet new sln -n shop
+dotnet new sln -n cinema
 ```
 
 3.	Crea la Web API:
 
 ```bash
-dotnet new webapi -n shop.WebApi --use-minimal-apis false --auth none
+dotnet new webapi -n cinema.WebApi --use-minimal-apis false --auth none
 ```
 
 4.	Agrega la Web API a la solución:
 
 ```bash
-dotnet sln add shop.WebApi
+dotnet sln add cinema.WebApi
 ```
 
 ### Paso 2: Ejecutar el Proyecto
@@ -37,7 +37,7 @@ dotnet sln add shop.WebApi
 Dirígete al directorio donde se encuentra tu Web API y ejecuta el siguiente comando para iniciar el servidor:
 
 ```bash
-cd shop.WebApi/
+cd cinema.WebApi/
 dotnet run
 ```
 
